@@ -87,4 +87,47 @@ public:
         }
 };
 
-#endif //__SELECT_HPP__
+class Select_Contains : public Select_Column {
+public:
+	Select_Contains( const Spreadsheet* sheet, const std::string& columnName, const std::string& ss):Select_Column(sheet, columnName){
+	substring = ss;
+	}
+	
+	bool select(const std::string& s) const {
+		if(s.find(substring) != std::string::npos)
+        	{
+                	return true;
+        	} else {
+        	return false;
+		}
+	}
+
+protected:
+	std::string substring;	
+};
+
+class Select_Not: public Select {
+public:
+	Select_Not(Select* selCont) {
+		contains = selCont;
+	}
+	
+	virtual bool select(const Spreadsheet* sheet, int row) const {
+		if(contains->select(sheet,row) == true) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	virtual ~Select_Not() {
+    
+		delete contains;
+	}
+		
+protected:
+	Select* contains;
+};
+	
+#endif

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/main.cpp
+spreadsheet.hpp
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/spreadsheet.hpp
+select.hpp
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/select.hpp
+iostream
+-
+
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/select.hpp
+cstring
+-
+
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/spreadsheet.cpp
+spreadsheet.hpp
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/spreadsheet.hpp
+select.hpp
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/select.hpp
+algorithm
+-
+iostream
+-
+
+/home/csmajs/ffan005/lab-05---strategy-pattern-dsavi001-ffan005-1/spreadsheet.hpp
+string
+-
+initializer_list
+-
+vector
+-
+iosfwd
+-
+
